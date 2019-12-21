@@ -358,6 +358,65 @@ return [
 
         /**
          * --------------------------------------------------------------------------------
+         * ITEM MATRIX RELATED METHODS
+         *
+         * DOC: https://developers.lightspeedhq.com/retail/endpoints/ItemMatrix/
+         * --------------------------------------------------------------------------------
+         */
+
+        'GetMatrix' => [
+            'httpMethod'    => 'GET',
+            'uri'           => 'Account/{accountID}/ItemMatrix.json',
+            'responseModel' => 'GenericModel',
+            'data'          => [
+                'root_key'      => 'Item',
+                'is_collection' => true,
+            ],
+            'parameters' => [
+                'accountID' => [
+                    'location' => 'uri',
+                    'type'     => 'integer',
+                    'required' => false,
+                ],
+                'limit' => [
+                    'location' => 'query',
+                    'required' => false,
+                    'type'     => 'integer',
+                ],
+                'offset' => [
+                    'location' => 'query',
+                    'required' => false,
+                    'type'     => 'integer',
+                ],
+                'archived' => [
+                    'location' => 'query',
+                    'required' => false,
+                    'type'     => 'boolean',
+                ],
+                'timeStamp' => [
+                    'location' => 'query',
+                    'required' => false,
+                    'type'     => 'string',
+                ],
+                'load_relations' => [
+                    'location' => 'query',
+                    'type'     => 'string',
+                    'required' => false,
+                ],
+                'orderby' => [
+                    'location' => 'query',
+                    'type'     => 'string',
+                    'required' => false,
+                ],
+            ],
+            'additionalParameters' => [
+                'location' => 'query',
+            ],
+        ],
+
+
+        /**
+         * --------------------------------------------------------------------------------
          * SALE RELATED METHODS
          *
          * DOC: http://developers.lightspeedhq.com/retail/endpoints/Account-Sale/
