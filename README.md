@@ -17,7 +17,7 @@ for [Lightspeed Retail API](http://developers.lightspeedhq.com/retail).
 Installation of ZfrLightspeedRetail is only officially supported using Composer:
 
 ```sh
-php composer.phar require zfr/zfr-lightspeed-retail
+php composer.phar require davd/zfr-lightspeed-retail
 ```
 
 ## Usage
