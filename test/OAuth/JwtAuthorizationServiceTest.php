@@ -127,7 +127,7 @@ final class AuthorizationServiceTest extends TestCase
         );
 
         // Fetches account ID
-        $this->httpClient->request('GET', 'https://api.merchantos.com/API/Account.json', [
+        $this->httpClient->request('GET', 'https://api.lightspeedapp.com/API/Account.json', [
             'headers' => ['Authorization' => 'Bearer foo'],
         ])->shouldBeCalled()->willReturn(
             new Response(200, [], stream_for(guzzle_json_encode([

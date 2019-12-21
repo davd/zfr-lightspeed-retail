@@ -43,7 +43,7 @@ final class JwtAuthorizationService implements AuthorizationServiceInterface
     // @codingStandardsIgnoreStart
     private const LS_ENDPOINT_AUTHORIZE    = 'https://cloud.merchantos.com/oauth/authorize.php?response_type=code&client_id=%s&scope=%s&state=%s';
     private const LS_ENDPOINT_ACCESS_TOKEN = 'https://cloud.merchantos.com/oauth/access_token.php';
-    private const LS_ENDPOINT_ACCOUNT      = 'https://api.merchantos.com/API/Account.json';
+    private const LS_ENDPOINT_ACCOUNT      = 'https://api.lightspeedapp.com/API/Account.json';
     // @codingStandardsIgnoreEnd
 
     /**
