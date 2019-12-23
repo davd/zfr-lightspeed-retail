@@ -352,6 +352,11 @@ return [
                     'location' => 'json',
                     'type'     => 'string',
                     'required' => false,
+                ],
+                'CustomFieldValues' => [
+                    'location' => 'json',
+                    'type'     => 'object',
+                    'required' => false,
                 ]
             ],
         ],
@@ -364,12 +369,12 @@ return [
          * --------------------------------------------------------------------------------
          */
 
-        'GetMatrix' => [
+        'GetMatrixItems' => [
             'httpMethod'    => 'GET',
             'uri'           => 'Account/{accountID}/ItemMatrix.json',
             'responseModel' => 'GenericModel',
             'data'          => [
-                'root_key'      => 'Item',
+                'root_key'      => 'ItemMatrix',
                 'is_collection' => true,
             ],
             'parameters' => [

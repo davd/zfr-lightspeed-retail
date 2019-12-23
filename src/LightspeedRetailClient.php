@@ -52,6 +52,10 @@ use ZfrLightspeedRetail\OAuth\CredentialStorage\CredentialStorageInterface;
  * @method ResultInterface createItem(array $args = [])
  * @method ResultInterface updateItem(array $args = [])
  *
+ * ITEM MATRIX RELATED METHODS:
+ *
+ * @method ResultInterface getMatrixItems(array $args = [])
+ *
  * SALE RELATED METHODS:
  *
  * @method ResultInterface getSales(array $args = [])
@@ -65,6 +69,7 @@ use ZfrLightspeedRetail\OAuth\CredentialStorage\CredentialStorageInterface;
  *
  * @method Traversable getCustomersIterator(array $args = [])
  * @method Traversable getItemsIterator(array $args = [])
+ * @method Traversable getMatrixItemsIterator(array $args = [])
  * @method Traversable getSalesIterator(array $args = [])
  */
 class LightspeedRetailClient
