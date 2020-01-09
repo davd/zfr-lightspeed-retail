@@ -429,7 +429,7 @@ return [
 
         'GetShops' => [
             'httpMethod'    => 'GET',
-            'uri'           => 'Account/{accountID}/Shops.json',
+            'uri'           => 'Account/{accountID}/Shop.json',
             'responseModel' => 'GenericModel',
             'data'          => [
                 'root_key'      => 'Shop',
