@@ -357,6 +357,11 @@ return [
                     'location' => 'json',
                     'type'     => 'object',
                     'required' => false,
+                ],
+                'ItemShops' => [
+                    'location' => 'json',
+                    'type'     => 'object',
+                    'required' => false,
                 ]
             ],
         ],
