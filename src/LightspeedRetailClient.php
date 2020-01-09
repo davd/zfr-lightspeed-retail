@@ -56,6 +56,10 @@ use ZfrLightspeedRetail\OAuth\CredentialStorage\CredentialStorageInterface;
  *
  * @method ResultInterface getMatrixItems(array $args = [])
  *
+ * SHOP RELATED METHODS:
+ *
+ * @method ResultInterface getShops(array $args = [])
+ *
  * SALE RELATED METHODS:
  *
  * @method ResultInterface getSales(array $args = [])

@@ -419,6 +419,41 @@ return [
             ],
         ],
 
+        /**
+         * --------------------------------------------------------------------------------
+         * SHOP RELATED METHODS
+         *
+         * DOC: https://developers.lightspeedhq.com/retail/endpoints/Shop/
+         * --------------------------------------------------------------------------------
+         */
+
+        'GetShops' => [
+            'httpMethod'    => 'GET',
+            'uri'           => 'Account/{accountID}/Shops.json',
+            'responseModel' => 'GenericModel',
+            'data'          => [
+                'root_key'      => 'Shop',
+                'is_collection' => true,
+            ],
+            'parameters' => [
+                'accountID' => [
+                    'location' => 'uri',
+                    'type'     => 'integer',
+                    'required' => false,
+                ],
+                'limit' => [
+                    'location' => 'query',
+                    'required' => false,
+                    'type'     => 'integer',
+                ],
+                'offset' => [
+                    'location' => 'query',
+                    'required' => false,
+                    'type'     => 'integer',
+                ],
+            ],
+        ],
+
 
         /**
          * --------------------------------------------------------------------------------
