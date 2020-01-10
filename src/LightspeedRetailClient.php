@@ -60,6 +60,10 @@ use ZfrLightspeedRetail\OAuth\CredentialStorage\CredentialStorageInterface;
  *
  * @method ResultInterface getShops(array $args = [])
  *
+ * EMPLOYEE RELATED METHODS:
+ *
+ * @method ResultInterface getEmployees(array $args = [])
+ *
  * SALE RELATED METHODS:
  *
  * @method ResultInterface getSales(array $args = [])

@@ -459,6 +459,41 @@ return [
             ],
         ],
 
+        /**
+         * --------------------------------------------------------------------------------
+         * EMPLOYEES RELATED METHODS
+         *
+         * DOC: https://developers.lightspeedhq.com/retail/endpoints/Employee/
+         * --------------------------------------------------------------------------------
+         */
+
+        'GetEmployees' => [
+            'httpMethod'    => 'GET',
+            'uri'           => 'Account/{accountID}/Shop.json',
+            'responseModel' => 'GenericModel',
+            'data'          => [
+                'root_key'      => 'Employee',
+                'is_collection' => true,
+            ],
+            'parameters' => [
+                'accountID' => [
+                    'location' => 'uri',
+                    'type'     => 'integer',
+                    'required' => false,
+                ],
+                'limit' => [
+                    'location' => 'query',
+                    'required' => false,
+                    'type'     => 'integer',
+                ],
+                'offset' => [
+                    'location' => 'query',
+                    'required' => false,
+                    'type'     => 'integer',
+                ],
+            ],
+        ],
+
 
         /**
          * --------------------------------------------------------------------------------
