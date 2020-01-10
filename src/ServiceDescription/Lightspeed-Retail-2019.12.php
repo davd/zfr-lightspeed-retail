@@ -469,7 +469,7 @@ return [
 
         'GetEmployees' => [
             'httpMethod'    => 'GET',
-            'uri'           => 'Account/{accountID}/Shop.json',
+            'uri'           => 'Account/{accountID}/Employee.json',
             'responseModel' => 'GenericModel',
             'data'          => [
                 'root_key'      => 'Employee',
